@@ -8,8 +8,8 @@ export function WorkbenchPage() {
         Six tools. Coming soon.
       </h1>
       <p className="text-lg text-charcoal max-w-2xl mb-12">
-        The draft-and-elevate workbench arrives in Plan 5. Here&rsquo;s what you&rsquo;ll find
-        when it ships.
+        The draft-and-elevate workbench arrives in Plan 5. Here&rsquo;s what you&rsquo;ll find when
+        it ships.
       </p>
       <ul className="grid sm:grid-cols-2 gap-px bg-subtle border border-subtle">
         {V2_INHERITED_CONTENT.workbenchTools.map((t) => (

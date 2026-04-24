@@ -12,12 +12,7 @@ const variants = {
   ghost: 'bg-transparent text-ink hover:bg-subtle',
 };
 
-export function Button({
-  variant = 'primary',
-  className = '',
-  children,
-  ...rest
-}: ButtonProps) {
+export function Button({ variant = 'primary', className = '', children, ...rest }: ButtonProps) {
   return (
     <button className={`${base} ${variants[variant]} ${className}`} {...rest}>
       {children}

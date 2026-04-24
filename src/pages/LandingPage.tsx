@@ -22,8 +22,8 @@ function Hero() {
           <em className="text-warm-charcoal">like it matters.</em>
         </h1>
         <p className="text-xl text-charcoal leading-relaxed max-w-2xl mb-10">
-          Resumes, cover letters, and LinkedIn copy drafted with AI you control.
-          Bring your own keys or use the free tier. Your words, your voice, your data.
+          Resumes, cover letters, and LinkedIn copy drafted with AI you control. Bring your own keys
+          or use the free tier. Your words, your voice, your data.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <a
@@ -98,7 +98,10 @@ function Workbench() {
   const tools = [
     { label: 'Resume Builder', body: 'Structured sections, bullet elevation, role-aware tone.' },
     { label: 'Cover Letter', body: 'Draft from your resume and a job posting in one pass.' },
-    { label: 'Skills Optimizer', body: 'Match your skill set to a role without stuffing keywords.' },
+    {
+      label: 'Skills Optimizer',
+      body: 'Match your skill set to a role without stuffing keywords.',
+    },
     { label: 'LinkedIn Copy', body: 'Headline, About, and experience blocks in your voice.' },
     { label: 'STAR Breakdown', body: 'Turn a story into Situation-Task-Action-Result bullets.' },
     { label: 'Application Answers', body: 'Short-answer fields drafted and refined in seconds.' },
@@ -110,8 +113,8 @@ function Workbench() {
           <p className="text-sm tracking-widest uppercase text-accent mb-4">The workbench</p>
           <h2 className="font-serif text-4xl leading-tight mb-4">Six tools. One vocabulary.</h2>
           <p className="text-charcoal leading-relaxed">
-            Everything shares your profile, your voice, and your evidence. Draft once,
-            adapt across formats without retyping the story.
+            Everything shares your profile, your voice, and your evidence. Draft once, adapt across
+            formats without retyping the story.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-subtle">

@@ -16,16 +16,12 @@ describe('scrubPII', () => {
 
   it('redacts specific named PII passed via options', () => {
     const input = 'Tania Makroo led the project.';
-    expect(scrubPII(input, { names: ['Tania Makroo'] })).toBe(
-      '[NAME_REDACTED] led the project.'
-    );
+    expect(scrubPII(input, { names: ['Tania Makroo'] })).toBe('[NAME_REDACTED] led the project.');
   });
 
   it('is case-insensitive for names', () => {
     const input = 'tania makroo is a designer.';
-    expect(scrubPII(input, { names: ['Tania Makroo'] })).toBe(
-      '[NAME_REDACTED] is a designer.'
-    );
+    expect(scrubPII(input, { names: ['Tania Makroo'] })).toBe('[NAME_REDACTED] is a designer.');
   });
 
   it('redacts URLs to personal sites when listed', () => {

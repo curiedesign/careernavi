@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   /* Design guide tokens — editorial, minimal, high-contrast */
@@ -10,14 +10,15 @@
   --color-muted: #6b6b6b;
   --color-subtle: #e8e8e0;
 
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 
   --spacing-section: 6rem;
 }
 
-html, body {
+html,
+body {
   background: var(--color-paper);
   color: var(--color-ink);
   font-family: var(--font-sans);

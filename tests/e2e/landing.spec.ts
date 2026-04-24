@@ -2,9 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('landing page renders hero and navigates to workbench', async ({ page }) => {
   await page.goto('/');
-  await expect(
-    page.getByRole('heading', { name: /write your career/i, level: 1 })
-  ).toBeVisible();
+  await expect(page.getByRole('heading', { name: /write your career/i, level: 1 })).toBeVisible();
 
   await page.getByRole('link', { name: 'Workbench', exact: true }).click();
   await expect(page).toHaveURL(/\/workbench$/);
@@ -26,16 +24,12 @@ test('privacy and terms routes render', async ({ page }) => {
   ).toBeVisible();
 
   await page.goto('/terms');
-  await expect(
-    page.getByRole('heading', { name: /the short version/i, level: 1 })
-  ).toBeVisible();
+  await expect(page.getByRole('heading', { name: /the short version/i, level: 1 })).toBeVisible();
 });
 
 test('header wordmark links back to home from any page', async ({ page }) => {
   await page.goto('/workbench');
   await page.getByRole('link', { name: 'CareerNavi' }).click();
   await expect(page).toHaveURL('http://localhost:5173/');
-  await expect(
-    page.getByRole('heading', { name: /write your career/i, level: 1 })
-  ).toBeVisible();
+  await expect(page.getByRole('heading', { name: /write your career/i, level: 1 })).toBeVisible();
 });

@@ -39,8 +39,7 @@ export const V2_INHERITED_CONTENT = {
   bulletLadderExample: {
     flat: 'Responsible for design team operations.',
     functional: 'Managed design team of 12 across 4 product lines.',
-    impact:
-      'Led design team of 12, shipping 4 product lines and cutting review cycle time by 40%.',
+    impact: 'Led design team of 12, shipping 4 product lines and cutting review cycle time by 40%.',
     executive:
       'Design leadership · 12-person team + 4 product lines · 40% faster review cycle, $2.4M saved.',
   },
