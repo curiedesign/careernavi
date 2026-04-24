@@ -1,6 +1,6 @@
-# Career Navigator V3
+# CareerNavi
 
-Live, AI-powered resume and career document platform.
+Live, AI-powered resume and career document platform. (Internal build: V3)
 
 Production: https://careers.thegirldesigns.com
 

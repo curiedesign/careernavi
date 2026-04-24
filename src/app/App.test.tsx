@@ -5,6 +5,6 @@ import App from './App';
 describe('App', () => {
   it('renders the site title', () => {
     render(<App />);
-    expect(screen.getByRole('heading', { name: /career navigator/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /careernavi/i })).toBeInTheDocument();
   });
 });
