@@ -1,0 +1,34 @@
+title = "CareerNavi V3 gitleaks config"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "anthropic-api-key"
+description = "Anthropic API key"
+regex = '''sk-ant-[a-zA-Z0-9\-_]{60,}'''
+keywords = ["sk-ant-"]
+
+[[rules]]
+id = "openai-api-key"
+description = "OpenAI API key"
+regex = '''sk-[a-zA-Z0-9]{48,}'''
+keywords = ["sk-"]
+
+[[rules]]
+id = "google-ai-key"
+description = "Google AI / Gemini API key"
+regex = '''AIza[0-9A-Za-z\-_]{35}'''
+keywords = ["AIza"]
+
+[[rules]]
+id = "groq-api-key"
+description = "Groq API key"
+regex = '''gsk_[a-zA-Z0-9]{40,}'''
+keywords = ["gsk_"]
+
+[allowlist]
+paths = [
+  '''package-lock\.json''',
+  '''\.gitleaks\.toml''',
+]

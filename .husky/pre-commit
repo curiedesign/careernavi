@@ -1,0 +1,10 @@
+# Run linters on staged files
+npx lint-staged
+
+# Run gitleaks to prevent committing secrets
+if command -v gitleaks >/dev/null 2>&1; then
+  gitleaks protect --staged --verbose --config .gitleaks.toml
+else
+  echo "WARNING: gitleaks not installed. Run: brew install gitleaks"
+  exit 1
+fi
