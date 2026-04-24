@@ -6,7 +6,8 @@ Production: https://careers.thegirldesigns.com
 
 ## Status
 
-Plan 1 (Foundation & V2 Port) — in progress.
+- Plan 1 (Foundation & V2 Port) — complete. Live at https://careers.thegirldesigns.com
+- Plan 2 (Supabase + Auth Core) — next
 
 ## Getting Started
 
