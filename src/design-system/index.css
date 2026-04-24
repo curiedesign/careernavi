@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* Design guide tokens — editorial, minimal, high-contrast */
+  --color-ink: #0a0a0a;
+  --color-paper: #fafaf7;
+  --color-charcoal: #2a2a2a;
+  --color-warm-charcoal: #3a342c;
+  --color-accent: #8a7a5a;
+  --color-muted: #6b6b6b;
+  --color-subtle: #e8e8e0;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --spacing-section: 6rem;
+}
+
+html, body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
